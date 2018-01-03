@@ -1,2 +1,3 @@
-# algo_trading_strategies
-Back testing algorithmic trading strategies
+# Algorithmic trading strategies
+
+Collection of scripts for back testing popular trading strategies. 
