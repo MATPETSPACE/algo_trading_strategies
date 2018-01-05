@@ -99,7 +99,7 @@ class CryptoArb(object):
                            str(no_of_coins) + " number of coins."
                     self.__trading_log.append(msg)
                     
-                elif diff >= 0.01*min(df1_cp, df2_cp):
+                if diff >= 0.01*min(df1_cp, df2_cp):
                     # Open Short
                     adjusted_df2_cp = df2_cp + df2_cp*self.params['fee'][1]
                     no_of_coins = round(min_balance/ adjusted_df2_cp, 3)
