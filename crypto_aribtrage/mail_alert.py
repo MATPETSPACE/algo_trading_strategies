@@ -54,6 +54,7 @@ while True:
             send_mail(fromid=FROMID, toid=TOID, password=PASSWORD, 
                       msg=msg)
             
+    if pos is not None:  
         if pos == 'Long' and diff >= 0.01*min(bitfinexUSDLive, krakenUSDLive):
             pos = None
             msg = '\n' + 'Close BTC long spread: Bitifinex and Kraken.'
