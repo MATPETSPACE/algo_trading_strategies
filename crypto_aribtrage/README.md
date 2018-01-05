@@ -45,17 +45,17 @@ in to the profits. It is thus important to choose order sizes and exchanges wher
 
 There are 3 mutually exhaustive and exclusive possibilities that would give us an exit signal. 
 
-1.	The (last traded) price of *cry* increases at *exchange1* to $630 and that at *exchange2* decreases to $605. 
-In this case, we would make (assuming no transaction fees) a profit of $30 on the long and $5 on the short with an 
-overall profit of $35. 
+1.	The (last traded) price of *cry* increases at *exchange1* to USD 630 and that at *exchange2* decreases to  USD 605. 
+In this case, we would make (assuming no transaction fees) a profit of  USD 30 on the long and  USD 5 on the short with an 
+overall profit of  USD 35. 
 
-2.	The price of *cry* increases at *exchange1* to $630 and that at *exchange2* increases to $620. 
-Again, assuming there are no transaction fees, we would make a profit of $20 on the long and a loss of $10 on 
-the short with an overall profit of $10. 
+2.	The price of *cry* increases at *exchange1* to  USD 630 and that at *exchange2* increases to  USD 620. 
+Again, assuming there are no transaction fees, we would make a profit of  USD 20 on the long and a loss of  USD 10 on 
+the short with an overall profit of  USD 10. 
 
-3.	The price of *cry* decreases at *exchange1* to $590 and that at *exchange2* decreases to $580. 
-Again, assuming there are no transaction fees, we would make a profit of $30 on the short and a loss of $10 on the 
-long with an overall profit of $20.
+3.	The price of *cry* decreases at *exchange1* to  USD 590 and that at *exchange2* decreases to  USD 580. 
+Again, assuming there are no transaction fees, we would make a profit of  USD 30 on the short and a loss of  USD 10 on the 
+long with an overall profit of  USD 20.
 
 Thus, if we are long the spread, we get an exit signal only if one the following three situations arise. 
 Price at *exchange1* increases and price at *exchange2* decreases, price at both the exchanges increases or 
