@@ -44,29 +44,29 @@ while True:
             pos = 'Long'
             msg = '\n' + 'Potential BTC long spread: Bitifinex and Kraken.'
             msg = msg + '\n' + 'Long Bitifinex and short Kraken.' + "\n"
-            send_mail(fromid = FROMID, toid = TOID, password = PASSWORD, 
-                      msg = msg)
+            send_mail(fromid=FROMID, toid=TOID, password=PASSWORD, 
+                      msg=msg)
         
         if diff > 0.01*min(bitfinexUSDLive, krakenUSDLive):
             pos = 'Short'
             msg = '\n' + 'Potential BTC short spread: Bitifinex and Kraken.'
             msg = msg + '\n' + 'Short Bitifinex and long Kraken.' + "\n"
-            send_mail(fromid = FROMID, toid = TOID, password = PASSWORD, 
-                      msg = msg)
+            send_mail(fromid=FROMID, toid=TOID, password=PASSWORD, 
+                      msg=msg)
             
         if pos == 'Long' and diff >= 0.01*min(bitfinexUSDLive, krakenUSDLive):
             pos = None
             msg = '\n' + 'Close BTC long spread: Bitifinex and Kraken.'
             msg = msg + '\n' + 'Close the Bitfinex long and Kraken short.'+ "\n"
-            send_mail(fromid = FROMID, toid = TOID, password = PASSWORD, 
-                      msg = msg)
+            send_mail(fromid=FROMID, toid=TOID, password=PASSWORD, 
+                      msg=msg)
          
         if pos == 'Short' and diff <= -0.01*min(bitfinexUSDLive, krakenUSDLive):
             pos = None
             msg = '\n' + 'Close BTC short spread: Bitifinex and Kraken' 
             msg = msg + '\n' + 'Close the Bitfinex short and Kraken long.' + "\n"
-            send_mail(fromid = FROMID, toid = TOID, password = PASSWORD, 
-                      msg = msg)
+            send_mail(fromid=FROMID, toid=TOID, password=PASSWORD, 
+                      msg=msg)
        
     time.sleep(1800) # 1800 equals one hour. The API's are called every hour
 
