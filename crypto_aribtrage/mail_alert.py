@@ -7,7 +7,9 @@
     received.
 """
 import time, json, requests, smtplib
-FROMID = '' # A string of the form example@gmx.com
+FROMID = '' # A string of the form example@gmx.com, 
+            # Use gmx.com and not gmail as gmail will block your attempt 
+            # security concerns. 
 PASSWORD = '' # password associated with FROMID
 TOID = '' # A string of the form example@gmail.com
 
@@ -69,5 +71,5 @@ while True:
             send_mail(fromid=FROMID, toid=TOID, password=PASSWORD, 
                       msg=msg)
        
-    time.sleep(1800) # 1800 equals one hour. The API's are called every hour
+    time.sleep(3600) # 3600 equals one hour. The API's are called every hour
 
