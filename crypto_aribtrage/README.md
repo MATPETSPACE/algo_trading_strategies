@@ -111,7 +111,6 @@ Our strategy takes in to account all pitfalls and sets up more robust entry and 
 
 ## Disclaimer
 
-Note that this strategy needs more rigorous back and stress testing. 
 I am not responsible for any loss you sustain. Be careful. This is crypto. Anything can happen.
 
 
